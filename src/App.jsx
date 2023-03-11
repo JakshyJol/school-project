@@ -7,7 +7,7 @@ import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
+    <div className="w-[100%]">
       <Navbar>
         <Routes>
           <Route path="/" element={<MainPage />} />

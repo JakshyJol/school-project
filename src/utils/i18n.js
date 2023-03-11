@@ -9,7 +9,7 @@ i18next
   .use(initReactI18next)
   .init({
     supportedLngs: ['ru', 'kg'],
-    fallbackLng: 'ru',
+    fallbackLng: 'kg',
     debug: false,
     // Options for language detector
     detection: {
