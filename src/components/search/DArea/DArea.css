@@ -1,0 +1,18 @@
+.area-select select {
+	width: 14.5vw;
+	height: 6vh;
+	border: 1px solid #8a8894;
+	border-radius: 16px;
+	font-size: 18px;
+
+	background-color: #f9f9f9;
+}
+
+.area-option {
+	border: 1px solid #8a8894;
+	border-radius: 16px;
+}
+
+.select {
+	display: none;
+}
