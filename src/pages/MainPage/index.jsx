@@ -1,7 +1,9 @@
 import educ from "../../assets/Education-cuate1.svg";
+import BlueLine from "../../components/BlueLine/Blueline";
 import Divider from "../../components/divider/Divider";
 import GridCard from "../../components/divider/GridCard";
 import NewsCard from "../../components/divider/NewsCard";
+import Footer from "../../components/Footer/footer";
 import Slider from "../../components/slider/Slider";
 
 
@@ -31,12 +33,21 @@ const MainPage = () => {
           <GridCard />
         </div>
         <Divider title={"Список школ"} />
-        
+
       </div>
       <Slider />
-      <Divider title={'Новости'}/>
+      <Divider title={'Новости'} />
       <NewsCard />
-
+      <br />
+      <br />
+      <br />
+      <BlueLine />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <Footer />
     </>
   );
 };
