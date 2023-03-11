@@ -1,5 +1,6 @@
 import educ from "../../assets/Education-cuate1.svg";
 import Divider from "../../components/divider/Divider";
+import GridCard from "../../components/divider/GridCard";
 
 const MainPage = () => {
   return (
@@ -21,7 +22,9 @@ const MainPage = () => {
         </div>
       </div>
         <Divider title={'Возможности сайта'} />
-        
+        <div className="w-[85%] mx-auto">
+        <GridCard/>
+        </div>
       </div>
     </>
   );
