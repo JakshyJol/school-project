@@ -1,0 +1,34 @@
+.school-wrapper {
+	width: 100%;
+	background-color: #f9f9f9;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.center {
+	width: 85vw;
+}
+.filter {
+	height: 10vh;
+	display: flex;
+	justify-content: flex-start;
+	gap: 40px;
+	align-items: center;
+}
+.grid-conteiner {
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.box-frid {
+	width: 100%;
+	height: 40vh;
+
+    background: #F9F9F9;
+    
+    border: 1px solid #BDBCDB;
+    box-shadow: 0px 4px 4px rgba(142, 141, 208, 0.16);
+    border-radius: 16px;
+}

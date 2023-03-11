@@ -1,0 +1,9 @@
+.region-select select {
+	width: 12vw;
+	height: 6vh;
+	border: 1px solid #8a8894;
+	border-radius: 16px;
+	font-size: 18px;
+
+	background-color: #f9f9f9;
+}
