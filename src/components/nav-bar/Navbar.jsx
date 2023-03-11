@@ -5,6 +5,7 @@ import { useState } from "react";
 import ReactCountryFlag from "react-country-flag";
 import { IoLanguageSharp } from "react-icons/io5";
 import Dropdown from "./button/dropdown";
+
 const languages = [
   {
     code: "ru",
@@ -27,6 +28,7 @@ const Navbar = ({ children }) => {
 
   return (
     <>
+   
       <div className=" bg-[#605DEC]">
         <div className="bg-[#F9F9F9] w-[100%] h-[80px] rounded-b-[32px]">
           <div className="w-[85%] mx-auto h-[85px] flex justify-between items-center">
