@@ -1,112 +1,56 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
+import sch3 from "../assets/schools/school-3.png";
+import sch8 from "../assets/schools/school-8.png";
+import sch9 from "../assets/schools/school-9.png";
+import sch33 from "../assets/schools/school33.svg";
+import sch88 from "../assets/schools/school88.svg";
+import schUs from "../assets/schools/american.svg";
+import nationl from "../assets/schools/national.svg";
+import prison from "../assets/schools/usPrison.svg";
+import premium from "../assets/schools/Premium.svg";
+
+const newsData = [
+  {}
+]
+const schoolData = [
+  { text: "УОШ Грамотеи", address: "пр.Манаса, 234", img: schUs, icon: premium },
+  {
+    text: "Кут билим",
+    address: "ул. Киевская, 12",
+    img: nationl,
+    icon: premium,
+  },
+  { text: "СШ  № 88", address: "мкр.Джал-23, 56", img: sch8, icon: premium },
+  {
+    text: "CШ с.Исфайрам",
+    address: "ул.Турусбекова, 66",
+    img: prison,
+    icon: premium,
+  },
+  { text: "Гимназия  №9", address: "ул.Широкая", img: sch9, icon: premium },
+  {
+    text: "Школа №3",
+    address: "мкр. Джал-29, дом 45А-45Б",
+    img: sch3,
+    icon: premium,
+  },
+  {
+    text: "СШ им. Навои 33",
+    address: "ул.Боконбаева , 44",
+    img: sch33,
+    icon: premium,
+  },
+  { text: "УОШ Грамотеи", address: "пр.Манаса, 230", img: sch88, icon: premium },
+];
 
 const initialState = {
-  data: []
+  data: schoolData,
 };
 
-
-// export const getChui = createAsyncThunk(
-//   "place/getChui",
-//   async () => {
-//     const res = await dashbordService.getChui();
-//     return res.data;
-//   }
-// );
-
-// export const getIssykKul = createAsyncThunk(
-//   "place/getIssykKul",
-//   async () => {
-//     const res = await dashbordService.getIssykKul();
-//     console.log(res);
-//     return res.data;
-//   }
-// );
-// export const getTalas = createAsyncThunk(
-//   "place/getTalas",
-//   async () => {
-//     const res = await dashbordService.getTalas();
-//     return res.data;
-//   }
-// );
-// export const getBatken = createAsyncThunk(
-//   "place/getBatken",
-//   async () => {
-//     const res = await dashbordService.getBatken();
-//     return res.data;
-//   }
-// );
-// export const getJalalAbad = createAsyncThunk(
-//   "place/getJalalAbad",
-//   async () => {
-//     const res = await dashbordService.getJalalAbad();
-//     return res.data;
-//   }
-// );
-
-// export const getNaryn = createAsyncThunk(
-//   "place/getNaryn",
-//   async () => {
-//     const res = await dashbordService.getJalalAbad();
-//     return res.data;
-//   }
-// );
-
-// export const getOsh = createAsyncThunk(
-//   "place/getOsh",
-//   async ()=>{
-//     const res = await dashbordService.getOsh();
-//     return res.data
-//   }
-// )
-
-// export const getPlaces = createAsyncThunk(
-//   "dashbord/getAll",
-//   async () => {
-//     const res = await dashbordService.getPlace();
-//     console.log(res)
-//     return res;
-//   }
-// );
-
-// export const updateTutorial = createAsyncThunk(
-//   "tutorials/update",
-//   async ({ id, data }) => {
-//     const res = await TutorialDataService.update(id, data);
-//     return res.data;
-//   }
-// );
-
-// export const deleteTutorial = createAsyncThunk(
-//   "tutorials/delete",
-//   async ({ id }) => {
-//     await TutorialDataService.remove(id);
-//     return { id };
-//   }
-// );
-
-// export const deleteAllTutorials = createAsyncThunk(
-//   "tutorials/deleteAll",
-//   async () => {
-//     const res = await TutorialDataService.removeAll();
-//     return res.data;
-//   }
-// );
-
-// export const findTutorialsByTitle = createAsyncThunk(
-//   "tutorials/findByTitle",
-//   async ({ title }) => {
-//     const res = await TutorialDataService.findByTitle(title);
-//     return res.data;
-//   }
-// );
-
 const infoSlice = createSlice({
-  name: "dasbordData",
+  name: "schoolInfo",
   initialState,
-  extraReducers: {
-  
-  },
+  extraReducers: {},
 });
-
 
 export default infoSlice.reducer;

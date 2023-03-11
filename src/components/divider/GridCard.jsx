@@ -27,7 +27,7 @@ const GridCard = () => {
     <div className="w-[100%] grid grid-cols-2  lg:grid-cols-3 gap-4 relative z-10">
       
       {cardData.map((el, idx) => (
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center" key={idx}>
           <div className="w-[300px]">
             <img alt={idx} src={el.img} className="object-cover"/>
           </div>
