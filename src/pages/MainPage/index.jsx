@@ -38,16 +38,10 @@ const MainPage = () => {
       <Slider />
       <Divider title={'Новости'} />
       <NewsCard />
-      <br />
-      <br />
-      <br />
       <BlueLine />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <Footer />
+      <div>
+        footer nah
+      </div>
     </>
   );
 };

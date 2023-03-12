@@ -1,10 +1,9 @@
 
-import './Footer.css';
 
 function Footer() {
     return (
-        <div className='FooterBlock'>
-            footer
+        <div className=''>
+            <p>Losnidaoicicodncn</p>
         </div>
     )
 }
