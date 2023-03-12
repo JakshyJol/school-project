@@ -1,0 +1,53 @@
+.PersonalDost {
+	width: 80vw;
+	height: 16vw;
+	border: 1px solid red;
+	box-sizing: border-box;
+	background: #f9f9f9;
+	border: 1px solid #bdbcdb;
+	box-shadow: 0px 4px 4px rgba(142, 141, 208, 0.16);
+	border-radius: 32px;
+
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+}
+.PersonalDost span {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 33.18px;
+	line-height: 45px;
+	color: #27254c;
+	padding-left: 26px;
+}
+.mestoDost {
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: column;
+	width: 76vw;
+	margin-left: 30px;
+}
+.mesto-info {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 10vh;
+	border-bottom: 1px solid #999393;
+
+}
+.mesto-info p {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 19.2px;
+	line-height: 26px;
+	color: #27254c;
+}
+.mesto-info button {
+	border: none;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 19.2px;
+	line-height: 26px;
+
+	color: #605dec;
+}

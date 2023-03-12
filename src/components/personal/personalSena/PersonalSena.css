@@ -1,0 +1,57 @@
+.PersonalSena {
+	width: 80vw;
+	height: 50vh;
+	background: #f9f9f9;
+	border: 1px solid #bdbcdb;
+	box-shadow: 0px 4px 4px rgba(142, 141, 208, 0.16);
+	border-radius: 32px;
+
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction: column;
+}
+.SenaHeader {
+	display: flex;
+	justify-content: flex-start;
+	gap: 50px;
+	padding-left: 46px;
+}
+.SenaHeader p {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 33.18px;
+	line-height: 45px;
+
+	/* Color/Blue */
+
+	color: #27254c;
+}
+.SenaHeader select {
+	border: none;
+	background-color: #f9f9f9;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 26.65px;
+	line-height: 36px;
+
+	color: #000000;
+}
+.grid-container {
+	width: 76vw;
+	padding-left: 40px;
+	display: grid;
+	grid: 60px / auto auto auto auto auto auto;
+}
+.grid-container div {
+	border: 1px solid #c5c0db;
+}
+.grid-container p {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 19.2px;
+	line-height: 26px;
+
+	/* Color/Blue */
+
+	color: #27254c;
+}
