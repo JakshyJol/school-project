@@ -1,6 +1,10 @@
+
+import mail from '../../assets/footer/mail.svg'
+import insta from '../../assets/footer/insta.svg'
+import whats from '../../assets/footer/whats.svg'
+import facebook from '../../assets/footer/facebook.svg'
+
 import './BFooter.css';
-import { AiOutlineMail, AiOutlineWhatsApp} from 'react-icons/Ai';
-import { BsInstagram } from 'react-icons/Bs';
 
 
 function Bfooter() {
@@ -14,9 +18,11 @@ function Bfooter() {
                 <p>Новости</p>
             </div>
             <div className='footerIcons'>
-                <AiOutlineMail className='icons'/>
-                <BsInstagram className='icons'/>
-                <AiOutlineWhatsApp className='icons'/>
+
+                <img src={mail} className='icons' alt="" />
+                <img src={insta} className='icons' alt="" />
+                <img src={whats} className='icons' alt="" />
+                <img src={facebook} className='icons' alt="" />
             </div>
         </div>
     )
