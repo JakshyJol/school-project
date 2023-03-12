@@ -1,9 +1,9 @@
 import educ from "../../assets/Education-cuate1.svg";
+import Bfooter from "../../components/BlockFooter/BFooter";
 import BlueLine from "../../components/BlueLine/Blueline";
 import Divider from "../../components/divider/Divider";
 import GridCard from "../../components/divider/GridCard";
 import NewsCard from "../../components/divider/NewsCard";
-import Footer from "../../components/Footer/footer";
 import Slider from "../../components/slider/Slider";
 
 
@@ -39,9 +39,7 @@ const MainPage = () => {
       <Divider title={'Новости'} />
       <NewsCard />
       <BlueLine />
-      <div>
-        footer nah
-      </div>
+      <Bfooter/>
     </>
   );
 };

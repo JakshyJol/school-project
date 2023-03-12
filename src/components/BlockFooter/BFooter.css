@@ -1,0 +1,29 @@
+.Bfooter {
+	margin-top: 100px;
+	width: 100%;
+	height: 30vh;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.footerLogo h1 {
+	font-weight: 700;
+	font-size: 26.65px;
+	line-height: 36px;
+
+	color: #605dec;
+}
+.footerNav {
+	width: 15vw;
+	display: flex;
+	justify-content: space-between;
+}
+.footerIcons {
+	display: flex;
+	justify-content: space-between;
+	width: 20vw;
+}
+.icons {
+	width: 6vw;
+	height: 6vh;
+}
