@@ -5,7 +5,7 @@ import { useState } from "react";
 import ReactCountryFlag from "react-country-flag";
 import { IoLanguageSharp } from "react-icons/io5";
 import Dropdown from "./button/dropdown";
-import { useLocation } from 'react-router-dom';
+import { useLocation } from "react-router-dom";
 const languages = [
   {
     code: "ru",
@@ -20,17 +20,16 @@ const languages = [
 ];
 
 const Navbar = ({ children }) => {
-  
   const [dropdown, setDropdown] = useState(false);
   const activeMenu = "text-[#605DEC]";
-  const location = useLocation();  
+  const location = useLocation();
   const [active, setActive] = useState(location.pathname);
   const { t } = useTranslation();
 
   return (
     <>
       <div className={active === "/" ? " bg-[#605DEC]" : "bg-white"}>
-        <div className="bg-[#F9F9F9] w-[100%] h-[80px] rounded-b-[32px] fixed z-50">
+        <div className="bg-[#F9F9F9] w-[100%] h-[80px] rounded-b-[32px] z-50 ">
           <div className="w-[85%] mx-auto h-[85px] flex justify-between items-center ">
             <Link to={"/"}>
               <h3
@@ -84,17 +83,19 @@ const Navbar = ({ children }) => {
                   />
                 )}
               </button>
-              <button
-                className="py-[8px] px-[24px] bg-[#605DEC] text-white rounded-xl hover:opacity-90"
-                type="submit"
-              >
-                {t("Login")}
-              </button>
+              <Link to="/profile">
+                <button
+                  className="py-[8px] px-[24px] bg-[#605DEC] text-white rounded-xl hover:opacity-90"
+                  type="submit"
+                >
+                  {t("Login")}
+                </button>
+              </Link>
             </div>
           </div>
         </div>
       </div>
-      <main className="w-[100%]">{children}</main>
+      <main className="w-[100%] ">{children}</main>
     </>
   );
 };

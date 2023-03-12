@@ -10,15 +10,15 @@ import PersonalPage from "./pages/PersonalPage";
 function App() {
   return (
     <div className="w-[100%]">
-      {/* <Navbar>
+      <Navbar>
         <Routes>
           <Route path="/" element={<MainPage />} />
           <Route path="/school" element={<School />} />
           <Route path="/school/:id" element={<SchoolPage />} />
           <Route path="/news" element={<News />} />
+          <Route path="/profile" element={<PersonalPage />} />
         </Routes>
-      </Navbar> */}
-      <PersonalPage />
+      </Navbar>
     </div>
   );
 }

@@ -10,7 +10,6 @@ import './PersonalPage.css'
 function PersonalPage() {
     return (
         <>
-        <Navbar/>
             <div className='personalPage'>
                 <div className='personalFoto'>
                     <div className="pageFoto">
