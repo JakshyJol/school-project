@@ -28,8 +28,7 @@ const Navbar = ({ children }) => {
 
   return (
     <>
-   
-      <div className=" bg-[#605DEC]">
+      <div className={active === "/" ? " bg-[#605DEC]" : "bg-white"}>
         <div className="bg-[#F9F9F9] w-[100%] h-[80px] rounded-b-[32px]">
           <div className="w-[85%] mx-auto h-[85px] flex justify-between items-center">
             <Link to={"/"}>
