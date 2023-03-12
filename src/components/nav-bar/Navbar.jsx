@@ -5,7 +5,7 @@ import { useState } from "react";
 import ReactCountryFlag from "react-country-flag";
 import { IoLanguageSharp } from "react-icons/io5";
 import Dropdown from "./button/dropdown";
-
+import { useLocation } from 'react-router-dom';
 const languages = [
   {
     code: "ru",
@@ -20,17 +20,18 @@ const languages = [
 ];
 
 const Navbar = ({ children }) => {
-  const [active, setActive] = useState("/");
+  
   const [dropdown, setDropdown] = useState(false);
   const activeMenu = "text-[#605DEC]";
-
+  const location = useLocation();  
+  const [active, setActive] = useState(location.pathname);
   const { t } = useTranslation();
 
   return (
     <>
       <div className={active === "/" ? " bg-[#605DEC]" : "bg-white"}>
-        <div className="bg-[#F9F9F9] w-[100%] h-[80px] rounded-b-[32px]">
-          <div className="w-[85%] mx-auto h-[85px] flex justify-between items-center">
+        <div className="bg-[#F9F9F9] w-[100%] h-[80px] rounded-b-[32px] fixed z-50">
+          <div className="w-[85%] mx-auto h-[85px] flex justify-between items-center ">
             <Link to={"/"}>
               <h3
                 className="text-[#605DEC] text-3xl font-bold mt-[-5px]"

@@ -5,6 +5,7 @@ import Search from "../../components/search/search/Search";
 import school from "../../assets/schools/school-3.png";
 import "./School.css";
 import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 function School() {
   const [term, setTerm] = useState("");
   const data = useSelector((state) => state.info);
@@ -44,18 +45,20 @@ function School() {
               }
             })
             ?.map((data, idx) => (
-              <div className="box-grid shadow-lg rounded-xl p-1" key={idx}>
-                <img src={data?.img} className="w-[100%]" />
-                <div className="flex justify-between px-3 py-3">
-                  <div className="mt-3">
-                    <p> {data.text} </p>
-                    <span>{data.address}</span>
-                  </div>
-                  <div className="w-10 h-10">
-                    <img src={data.icon} />
+              <Link to={`/school/${data.id}`}>
+                <div className="box-grid shadow-lg rounded-xl p-1" key={idx}>
+                  <img src={data?.img} className="w-[100%]" />
+                  <div className="flex justify-between px-3 py-3">
+                    <div className="mt-3">
+                      <p> {data.text} </p>
+                      <span>{data.address}</span>
+                    </div>
+                    <div className="w-10 h-10">
+                      <img src={data.icon} />
+                    </div>
                   </div>
                 </div>
-              </div>
+              </Link>
             ))}
         </div>
       </div>

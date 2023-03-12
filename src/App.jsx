@@ -4,6 +4,7 @@ import MainPage from "./pages/MainPage";
 import School from "./pages/School";
 import News from "./pages/News";
 import { Routes, Route } from "react-router-dom";
+import SchoolPage from "./pages/SchoolPage";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Routes>
           <Route path="/" element={<MainPage />} />
           <Route path="/school" element={<School />} />
+          <Route path="/school/:id" element={<SchoolPage />} />
           <Route path="/news" element={<News />} />
         </Routes>
       </Navbar>

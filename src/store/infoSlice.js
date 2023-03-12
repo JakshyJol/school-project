@@ -8,7 +8,44 @@ import schUs from "../assets/schools/american.svg";
 import nationl from "../assets/schools/national.svg";
 import prison from "../assets/schools/usPrison.svg";
 import premium from "../assets/schools/Premium.svg";
-import { current } from "@reduxjs/toolkit";
+import curlyTeacher from ".././assets/teachers/curlyTeacher.png";
+import hindiTeacger from ".././assets/teachers/hindiTeacger.png";
+import menTeacher from "../assets/teachers/menTeacher.png";
+import womanTech from "../assets/teachers/womanTech.svg";
+
+const teacherData = [
+  {
+    text: "Назаркулова Д. А.",
+    address: "директор: Высшее педагогичевкое",
+    img: womanTech,
+  },
+  {
+    text: "Азаматов Ч.Д.",
+    address: "завуч Образование: Высшее педагогичевкое  ",
+    img: menTeacher,
+  },
+  {
+    text: "Назаркулова Д. А.",
+    address: "директор: Высшее педагогичевкое",
+    img: womanTech,
+  },
+  {
+    text: "Айткулова М.М. А.",
+    address: "Высшее педагогичевкое  ",
+    img: curlyTeacher,
+  },
+  {
+    text: "Максатов Ж.Р",
+    address: "Высшее педагогичевкое  ",
+    img: hindiTeacger,
+  },
+  {
+    text: "Айткулова М.М. А.",
+    address: "Высшее педагогичевкое  ",
+    img: curlyTeacher,
+  },
+];
+
 const schoolData = [
   {
     text: "УОШ Грамотеи",
@@ -16,6 +53,7 @@ const schoolData = [
     img: schUs,
     icon: premium,
     region: "Chuy",
+    id: "imi12m1",
   },
   {
     text: "Кут билим",
@@ -23,6 +61,7 @@ const schoolData = [
     img: nationl,
     icon: premium,
     region: "Osh",
+    id: "sami133",
   },
   {
     text: "СШ  № 88",
@@ -30,6 +69,7 @@ const schoolData = [
     img: sch8,
     icon: premium,
     region: "Chuy",
+    id: "sadsm234",
   },
   {
     text: "CШ с.Исфайрам",
@@ -37,6 +77,7 @@ const schoolData = [
     img: prison,
     icon: premium,
     region: "Batken",
+    id: "3032isdmidsm",
   },
   {
     text: "Гимназия  №9",
@@ -44,6 +85,7 @@ const schoolData = [
     img: sch9,
     icon: premium,
     region: "Chuy",
+    id: "asod22-2-3",
   },
   {
     text: "Школа №3",
@@ -51,6 +93,7 @@ const schoolData = [
     img: sch3,
     icon: premium,
     region: "Talas",
+    id: "saommk23",
   },
   {
     text: "СШ им. Навои 33",
@@ -58,6 +101,7 @@ const schoolData = [
     img: sch33,
     icon: premium,
     region: "Osh",
+    id: "sdi990nun",
   },
   {
     text: "УОШ Грамотеи",
@@ -65,12 +109,14 @@ const schoolData = [
     img: sch88,
     icon: premium,
     region: "Naryn",
+    id: "asi20329",
   },
 ];
 
 const initialState = {
   data: schoolData,
   filtredData: "",
+  teachers: teacherData,
 };
 
 const infoSlice = createSlice({

@@ -19,8 +19,8 @@ const sliderRight = (id) => {
   }
 };
 
-const Slider = () => {
-  const schools = useSelector((state) => state.info.data);
+const Slider = (props) => {
+  const schools = props.schools;
   console.log(schools);
   return (
     <>
@@ -40,23 +40,23 @@ const Slider = () => {
               <div className="w-[280px] p-1 inline-block group  relative pt-9 mr-3">
                 <div className="w-[266px] h-[200px] ">
                   <img
-                    src={el.img}
-                    alt={el.text}
+                    src={el?.img}
+                    alt={el?.text}
                     className="group-hover:scale-105 ease-out duration-300"
                   />
                 </div>
                 <div className="flex justify-between px-2 py-3 group">
-                  <div className="mt-3 group">
-                    <p className="group-hover:scale-105 ease-out duration-300">
+                  <div className="mt-3 group  ">
+                    <p className="group-hover:scale-105 ease-out duration-300 ">
                       {" "}
-                      {el.text}{" "}
+                      {el?.text}{" "}
                     </p>
-                    <span className="group-hover:scale-105 ease-out duration-300">
-                      {el.address}
-                    </span>
+                    <p className="w-52 h-14 overflow-auto  group-hover:scale-105 ease-out duration-300  ">
+                      {el?.address}
+                    </p>
                   </div>
                   <div className="w-10 h-10">
-                    <img src={el.icon} />
+                    {el.icon && <img src={el.icon} />}
                   </div>
                 </div>
               </div>

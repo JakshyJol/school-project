@@ -1,3 +1,4 @@
+import { useSelector } from "react-redux";
 import educ from "../../assets/Education-cuate1.svg";
 import BlueLine from "../../components/BlueLine/Blueline";
 import Divider from "../../components/divider/Divider";
@@ -8,6 +9,7 @@ import Slider from "../../components/slider/Slider";
 
 
 const MainPage = () => {
+  const schools = useSelector((state) => state.info.data);
   return (
     <>
       <div>
@@ -35,7 +37,7 @@ const MainPage = () => {
         <Divider title={"Список школ"} />
 
       </div>
-      <Slider />
+      <Slider schools={schools}/>
       <Divider title={'Новости'} />
       <NewsCard />
       <BlueLine />
