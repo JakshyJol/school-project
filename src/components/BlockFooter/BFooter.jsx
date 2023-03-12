@@ -1,5 +1,5 @@
 import './BFooter.css';
-import { AiOutlineMail, AiOutlineWhatsApp , AiFillFacebook} from 'react-icons/Ai';
+import { AiOutlineMail, AiOutlineWhatsApp} from 'react-icons/Ai';
 import { BsInstagram } from 'react-icons/Bs';
 
 
